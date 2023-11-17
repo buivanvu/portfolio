@@ -1,0 +1,45 @@
+#root{
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+}
+
+@keyframes morph {
+  0% {
+      border-radius: 40% 60% 60% 40%/70% 30%
+  }
+
+  to {
+      border-radius: 40% 60%
+  }
+}
+
+@keyframes spin {
+  to {
+      transform: rotate(1turn)
+  }
+}
+
+.animated-morph{
+  animation: morph 5s linear infinite alternate, spin 20s linear infinite;
+}
+
+.content {
+  width: 334px;
+  height: 216px;
+  background: #f0f0f0;
+  border-radius: 3px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.wrapper {
+  padding: 10px;
+  width: 668px;
+  height: 432px;
+  transform: scale(0.5);
+  transform-origin: top left;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
