@@ -7,15 +7,15 @@ import Skills from './sections/Skills.js';
 function App() {
   return (
     <div>
-      <ScrollManager />
-      <div className='flex flex-row justify-center'>
-        <div className='mx-auto max-w-[1280px]'>
-          <About />
+      <ScrollManager>
+        <div className='flex flex-row justify-center'>
+          <div className='mx-auto max-w-[1280px]'>
+            <About />
+          </div>
         </div>
-      </div>
-      <Projects />
-      <Skills />
-      <ScrollManager />
+        <Projects />
+        <Skills />
+      </ScrollManager>
     </div>
   )
 }

@@ -1,6 +1,6 @@
 
-import React, { useRef, useState } from "react";
-import { useGLTF, useScroll, useCursor, Outlines } from "@react-three/drei";
+import { useRef, useState } from "react";
+import { useGLTF, useCursor, Outlines } from "@react-three/drei";
 import { Select } from '@react-three/postprocessing';
 import { useFrame } from "@react-three/fiber";
 
@@ -36,7 +36,7 @@ function ObjSelection(props) {
 export default function SkillsModel(props) {
   const model = useRef(null);
   const { nodes, materials } = useGLTF("/docker_new.glb");
-  
+
   useFrame(() => {
     // model.current.rotation.y += 0.005;
     // model.current.position.y = -(25 - data.offset*40);

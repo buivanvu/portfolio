@@ -43,3 +43,31 @@
   align-items: center;
   justify-items: center;
 }
+
+
+.mouse-tracker{
+  --x-offset: -1000px;
+  --y-offset: -1000px;
+  --gradient-stop: 60deg, #000 0%, #000 80%;
+  display: block;
+  background-image: 
+  radial-gradient(circle at var(--x-offset) var(--y-offset), rgba(255, 255, 255, 0.5) 0%, transparent 10%, transparent),
+  linear-gradient(var(--gradient-stop));
+}
+
+.txt-name{
+  --gradient-stop: 60deg, #0086ff 0%, #e707ff 80%;
+  cursor: context-menu;
+  font-size: 7.25rem;
+}
+
+.project-desc{
+  color: rgb(255, 255, 255, 0.2);
+  background: linear-gradient(90deg, #d68cdf, #0086ff) no-repeat;
+  background-size: 0%;
+}
+
+
+.addx{
+  --gradient-stop: 60deg, #0086ff 0%, #e707ff 80%;
+}
