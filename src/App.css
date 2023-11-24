@@ -3,6 +3,20 @@
   font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
 }
 
+body {
+  --background: rgb(255, 255, 255);
+}
+
+body, .auto-bg{
+  
+  background-color: var(--background);
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 @keyframes morph {
   0% {
       border-radius: 40% 60% 60% 40%/70% 30%
@@ -23,10 +37,14 @@
   animation: morph 5s linear infinite alternate, spin 20s linear infinite;
 }
 
+.animate-fade{
+  animation: fadeIn .6s ease-in;
+}
+
 .content {
   width: 334px;
   height: 216px;
-  background: #f0f0f0;
+  /* background: #f0f0f0; */
   border-radius: 3px;
   padding: 0;
   overflow: hidden;
@@ -50,9 +68,12 @@
   --y-offset: -1000px;
   --gradient-stop: 60deg, #000 0%, #000 80%;
   display: block;
+  color: rgba(0, 0, 0, 0.2);
   background-image: 
-  radial-gradient(circle at var(--x-offset) var(--y-offset), rgba(255, 255, 255, 0.5) 0%, transparent 10%, transparent),
+  radial-gradient(circle at var(--x-offset) var(--y-offset), rgba(255, 255, 255, 0.66) 0%, transparent 15%, transparent),
   linear-gradient(var(--gradient-stop));
+  background-repeat: no-repeat;
+  cursor: context-menu;
 }
 
 .txt-name{
@@ -61,13 +82,20 @@
   font-size: 7.25rem;
 }
 
+.text-gray{
+  --gradient-stop: 60deg, #666 0%, #666 80%;
+  color: #999;
+}
+
 .project-desc{
   color: rgb(255, 255, 255, 0.2);
-  background: linear-gradient(90deg, #d68cdf, #0086ff) no-repeat;
+  --gradient-stop: 90deg, #d68cdf, #0086ff;
   background-size: 0%;
+  line-height: 4rem;
 }
 
 
 .addx{
-  --gradient-stop: 60deg, #0086ff 0%, #e707ff 80%;
+  color: rgba(255, 255, 255, 0.15);
+  --gradient-stop: 60deg, #0075db 0%, #c800de 80%;
 }

@@ -5,7 +5,7 @@ export const ScrollContext = createContext(null);
 
 export const ScrollManager = (props) => {
   const scrollData = useScrollData();
-  const [scrollState, setScrollState] = useState({ page: 0 });
+  const [scrollState, setScrollState] = useState(0);
 
   const scrollHandler =  () => {
     scrollData.scrollTop = document.documentElement.scrollTop;
@@ -13,18 +13,16 @@ export const ScrollManager = (props) => {
     
     // Adjust screen color based on scroll position
     const brightness = 255 * (1 - Math.min(scrollData.offset * 5, 1));
-    document.body.style.background = `rgb(${brightness}, ${brightness}, ${brightness})`;
-    console.log(scrollData.offset);
-    if (scrollData.offset > 0.5) {
-      setScrollState({ page: 1 });
-    }
+    document.body.style.setProperty('--background', `rgb(${brightness}, ${brightness}, ${brightness})`);
+    setScrollState(Number(scrollData.offset.toFixed(2)));
   }
 
   useEffect(() => {
     const scrollSize = (document.body.scrollHeight - window.innerHeight);
     scrollData.scrollSize = scrollSize;
     window.addEventListener('scroll', scrollHandler);
-
+    
+    scrollHandler();
     return () => {
       window.removeEventListener('scroll', scrollHandler);
     };
