@@ -38,7 +38,7 @@ body, .auto-bg{
 }
 
 .animate-fade{
-  animation: fadeIn .6s ease-in;
+  animation: fadeIn .8s ease-in;
 }
 
 .content {
@@ -70,7 +70,7 @@ body, .auto-bg{
   display: block;
   color: rgba(0, 0, 0, 0.2);
   background-image: 
-  radial-gradient(circle at var(--x-offset) var(--y-offset), rgba(255, 255, 255, 0.66) 0%, transparent 15%, transparent),
+  radial-gradient(300px 300px at var(--x-offset) var(--y-offset), rgba(255, 255, 255, 0.7) 0%, transparent 33%, transparent),
   linear-gradient(var(--gradient-stop));
   background-repeat: no-repeat;
   cursor: context-menu;
@@ -87,15 +87,22 @@ body, .auto-bg{
   color: #999;
 }
 
-.project-desc{
-  color: rgb(255, 255, 255, 0.2);
-  --gradient-stop: 90deg, #d68cdf, #0086ff;
-  background-size: 0%;
-  line-height: 4rem;
-}
-
 
 .addx{
   color: rgba(255, 255, 255, 0.15);
   --gradient-stop: 60deg, #0075db 0%, #c800de 80%;
+}
+
+.skill-label{
+  background-color: rgba(255, 255, 255, 0.4);
+  border: solid 1px #f3f3f3;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  z-index: 10;
+  color: black;
+  width: fit-content;
+  position: absolute;
+  top: calc(var(--y-offset) + 16px);
+  left: calc(var(--x-offset) + 16px);
+  pointer-events: none;
 }

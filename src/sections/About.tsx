@@ -5,7 +5,11 @@ export default function About() {
     <div className="h-[80vh] xl:min-h-[600px] flex flex-row">
       <div className="flex w-2/3 flex-col justify-center">
           <AnimatedText playOnce duration={.4} className="font-bold text-2xl tracking-tighter text-secondary w-fit">Hi, I am</AnimatedText>
-          <AnimatedText playOnce delay={0.4} duration={1} className="mouse-tracker txt-name font-bold tracking-tighter bg-clip-text w-fit">Bui Van Vu</AnimatedText>
+          <AnimatedText playOnce delay={0.4} duration={1}
+            className="mouse-tracker txt-name font-bold tracking-tighter bg-clip-text w-fit"
+          >
+            Bùi Văn Vũ
+          </AnimatedText>
           <AnimatedText playOnce delay={1} className="text-3xl font-bold tracking-tight text-secondary w-fit">Fullstack Web Developer</AnimatedText>
           <AnimatedText playOnce delay={1.5} className="text-3xl font-bold tracking-tight text-secondary w-fit">Based in Viet Nam</AnimatedText>
       </div>
