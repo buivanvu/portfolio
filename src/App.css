@@ -1,6 +1,6 @@
 #root{
   height: 100vh;
-  font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
@@ -77,13 +77,13 @@ body, .auto-bg{
 }
 
 .txt-name{
-  --gradient-stop: 60deg, #0086ff 0%, #e707ff 80%;
+  --gradient-stop: 60deg, #0086ff, #e707ff;
   cursor: context-menu;
   font-size: 7.25rem;
 }
 
 .text-gray{
-  --gradient-stop: 60deg, #666 0%, #666 80%;
+  --gradient-stop: 60deg, #777, #777;
   color: #999;
 }
 

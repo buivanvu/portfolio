@@ -13,7 +13,11 @@ export default function Skills() {
   return (
     <div className='flex flex-col justify-between mx-auto max-w-[1280px]'>
     <div className='w-full text-center'>
-      <h1 className='text-6xl text-yellow-200 font-bold'>Skills</h1>
+      <h1 className='text-6xl text-yellow-300 font-bold'>Skills</h1>
+      <div className='text-xl text-green-500 m-3'>
+          My skills variously from backend to frontend and development/design softwares. <br />
+          <a className='font-bold' href='/vu_cv.pdf'>download my resume</a> for more details
+      </div>
     </div>
     <div className='w-full'>
     <CSSMouseTracker className='relative'>
