@@ -13,10 +13,10 @@ export default function Projects() {
     <div className='relative'>
       <div className='flex flex-col lg:flex-row flex-wrap justify-start lg:justify-between mx-auto max-w-[1280px] h-screen sticky top-0 pointer-events-none'>
         <div className='w-full lg:w-1/2 pointer-events-none'>
-          <div className='text-2xl lg:text-5xl font-bold py-3 text-gray-600 auto-bg'>Featured projects</div>
+          <div className='hidden md:visible text-2xl lg:text-5xl font-bold py-3 text-gray-600 auto-bg'>Featured projects</div>
         </div>
-        <div className='w-full lg:w-1/2 flex flex-col lg:justify-center py-5'>
-          <div id="canvas-div" className='relative aspect-square'>
+        <div className='w-full lg:w-1/2 flex flex-col lg:justify-center'>
+          <div id="canvas-project" className='relative aspect-square'>
             <Canvas camera={{ position: [-4.5, 0.1, -16.6], fov: 47 }}>
               <ambientLight intensity={0.2} />
               <pointLight position={[10, 10, 10]} intensity={.8} />
@@ -32,9 +32,9 @@ export default function Projects() {
         </div>
 
       </div>
-      <div className='flex flex-col justify-between mx-auto max-w-[1280px]'>
+      <div className='flex flex-col justify-between mx-auto max-w-[1280px] p-5 md:p-0'>
         <div className='h-screen lg:w-1/2'>
-          <AnimatedText delay={0.5} className='font-bold tracking-tighter text-8xl my-6 w-fit addx'>ADDX</AnimatedText>
+          <AnimatedText delay={0.5} className='font-bold tracking-tighter text-7xl md:text-8xl my-6 w-fit addx'>ADDX</AnimatedText>
           <motion.div initial={{ y: 120, opacity: .1 }} 
             whileInView={{
               y: 0,
@@ -43,7 +43,7 @@ export default function Projects() {
                 duration: .5,
               },
             }}>
-            <CSSMouseTracker className='text-4xl font-bold text-gray bg-clip-text text-transparent'>
+            <CSSMouseTracker className='text-2xl md:text-4xl font-bold text-gray bg-clip-text text-transparent'>
               a platform that <br />
               offers access to world-class <br />
               private market investments <br />
@@ -53,7 +53,7 @@ export default function Projects() {
           </motion.div>
         </div>
         <div className='h-screen lg:w-1/2'>
-          <AnimatedText delay={0.5} className='font-bold tracking-tighter text-6xl my-6 w-fit addx'>Car from Japan</AnimatedText>
+          <AnimatedText delay={0.5} className='font-bold tracking-tighter text-5xl md:text-6xl my-6 w-fit addx'>Car from Japan</AnimatedText>
           <motion.div initial={{ y: 120 }} 
             whileInView={{
               y: 0,
@@ -61,7 +61,7 @@ export default function Projects() {
                 duration: .5,
               },
             }}>
-            <CSSMouseTracker className='text-4xl font-bold text-gray bg-clip-text text-transparent'>
+            <CSSMouseTracker className='text-3xl md:text-4xl font-bold text-gray bg-clip-text text-transparent'>
               a platform that <br />
               offers access to world-class <br />
               private market investments <br />

@@ -66,7 +66,7 @@ body, .auto-bg{
 .mouse-tracker{
   --x-offset: -1000px;
   --y-offset: -1000px;
-  --gradient-stop: 60deg, #000 0%, #000 80%;
+  --gradient-stop: 60deg, #000 0%, #000 100%;
   display: block;
   color: rgba(0, 0, 0, 0.2);
   background-image: 
@@ -79,7 +79,6 @@ body, .auto-bg{
 .txt-name{
   --gradient-stop: 60deg, #0086ff, #e707ff;
   cursor: context-menu;
-  font-size: 7.25rem;
 }
 
 .text-gray{
@@ -90,7 +89,7 @@ body, .auto-bg{
 
 .addx{
   color: rgba(255, 255, 255, 0.15);
-  --gradient-stop: 60deg, #0075db 0%, #c800de 80%;
+  --gradient-stop: 60deg, #0075db 0%, #c800de 100%;
 }
 
 .skill-label{
@@ -105,4 +104,8 @@ body, .auto-bg{
   top: calc(var(--y-offset) + 16px);
   left: calc(var(--x-offset) + 16px);
   pointer-events: none;
+}
+
+#canvas-project{
+  background-image: linear-gradient(180deg, #000 0%, transparent 85%, transparent 100%);
 }
