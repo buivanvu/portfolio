@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <ScrollManager>
-        <div className='flex flex-row justify-center'>
+        <div className='flex flex-row justify-center bg-top-section'>
           <div className='mx-auto max-w-[1280px]'>
             <About />
           </div>

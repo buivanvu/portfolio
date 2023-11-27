@@ -13,10 +13,13 @@ export default function Projects() {
     <div className='relative'>
       <div className='flex flex-col lg:flex-row flex-wrap justify-start lg:justify-between mx-auto max-w-[1280px] h-screen sticky top-0 pointer-events-none'>
         <div className='w-full lg:w-1/2 pointer-events-none'>
-          <div className='lg:visible text-2xl lg:text-5xl font-bold py-3 text-purple-700 auto-bg pt-6'>Featured projects</div>
+          <div className='hidden md:block text-2xl lg:text-4xl font-bold py-3 text-emerald-700 auto-bg pt-6'>Featured Projects</div>
         </div>
         <div className='w-full lg:w-1/2 flex flex-col lg:justify-center'>
-          <div id="canvas-project" className='relative aspect-square'>
+          <div id="canvas-project" className='relative aspect-square md:pt-0'>
+            <div className='absolute w-full md:hidden'>
+              <div className='text-center text-lg text-purple-500 bg-gray-900 py-2'>FEATURED PROJECTS</div>
+            </div>
             <Canvas camera={{ position: [-4.5, 0.1, -16.6], fov: 47 }}>
               <ambientLight intensity={0.2} />
               <pointLight position={[10, 10, 10]} intensity={.8} />
@@ -43,7 +46,7 @@ export default function Projects() {
                 duration: .5,
               },
             }}>
-            <CSSMouseTracker className='text-2xl py-2 md:text-4xl font-bold text-gray bg-clip-text text-transparent leading-tight tracking-normal '>
+            <CSSMouseTracker className='text-2xl py-2 md:text-4xl font-bold text-gray bg-clip-text text-transparent leading-normal tracking-normal '>
               a platform that <br />
               offers access to world-class <br />
               private market investments <br />
@@ -61,7 +64,7 @@ export default function Projects() {
                 duration: .5,
               },
             }}>
-            <CSSMouseTracker className='text-3xl py-2 md:text-4xl font-bold text-gray bg-clip-text text-transparent leading-tight tracking-normal '>
+            <CSSMouseTracker className='text-2xl py-2 md:text-4xl font-bold text-gray bg-clip-text text-transparent leading-normal tracking-normal '>
               ecommerce platform<br/>
               which sell & export used<br/>
               cars from Japan to<br />
@@ -79,10 +82,10 @@ export default function Projects() {
                 duration: .5,
               },
             }}>
-            <CSSMouseTracker className='text-4xl py-2 font-bold text-gray bg-clip-text text-transparent leading-tight tracking-normal'>
-              <div>e-learning platform</div>
-              <div>it's my very first journey to</div>
-              the web developments world.<br />
+            <CSSMouseTracker className='text-2xl md:text-4xl py-2 font-bold text-gray bg-clip-text text-transparent leading-normal tracking-tight'>
+              <div>e-learning platform -</div>
+              <div>my very first journey to the</div>
+              web developments world<br />
               since I were a student at HNUE
             </CSSMouseTracker>
             <div className='text-lg text-muted mt-3'><span className='tracking-tighter'>Role as:</span> <strong>Co-Founder, System Design & Engineer</strong></div>
