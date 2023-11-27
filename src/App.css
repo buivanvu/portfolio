@@ -70,15 +70,13 @@ body, .auto-bg{
   display: block;
   color: rgba(0, 0, 0, 0.2);
   background-image: 
-  radial-gradient(300px 300px at var(--x-offset) var(--y-offset), rgba(255, 255, 255, 0.7) 0%, transparent 33%, transparent),
+  radial-gradient(330px 330px at var(--x-offset) var(--y-offset), rgba(255, 255, 255, 0.7) 0%, transparent 33%, transparent),
   linear-gradient(var(--gradient-stop));
   background-repeat: no-repeat;
-  cursor: context-menu;
 }
 
 .txt-name{
   --gradient-stop: 60deg, #0086ff, #e707ff;
-  cursor: context-menu;
 }
 
 .text-gray{
@@ -107,5 +105,5 @@ body, .auto-bg{
 }
 
 #canvas-project{
-  background-image: linear-gradient(180deg, #000 0%, transparent 85%, transparent 100%);
+  background-image: linear-gradient(180deg, var(--background) 0%, transparent 85%, transparent 100%);
 }

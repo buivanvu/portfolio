@@ -13,7 +13,7 @@ export default function Projects() {
     <div className='relative'>
       <div className='flex flex-col lg:flex-row flex-wrap justify-start lg:justify-between mx-auto max-w-[1280px] h-screen sticky top-0 pointer-events-none'>
         <div className='w-full lg:w-1/2 pointer-events-none'>
-          <div className='hidden md:visible text-2xl lg:text-5xl font-bold py-3 text-gray-600 auto-bg'>Featured projects</div>
+          <div className='lg:visible text-2xl lg:text-5xl font-bold py-3 text-gray-600 auto-bg'>Featured projects</div>
         </div>
         <div className='w-full lg:w-1/2 flex flex-col lg:justify-center'>
           <div id="canvas-project" className='relative aspect-square'>
