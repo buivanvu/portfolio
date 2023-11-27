@@ -52,10 +52,10 @@ export default function SkillsModel(props) {
   const scrollData = useScrollData();
 
   useFrame(() => {
-    if (scrollData.offset > 0.91 ) {
-      model.current.rotation.y += 0.001;
+    if (scrollData.offset > 0.92 ) {
+      model.current.rotation.y += 0.00075;
     } else {
-      model.current.rotation.y = 1.5 + scrollData.offset * 10;
+      model.current.rotation.y =  - scrollData.offset;
     }
   });
 

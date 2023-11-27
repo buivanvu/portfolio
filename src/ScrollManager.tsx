@@ -3,7 +3,7 @@ import { useScrollData } from "./UseScrollData";
 
 export const ScrollContext = createContext(null);
 
-export const ScrollManager = (props) => {
+export const ScrollManager = (props: { children: React.ReactNode}) => {
   const scrollData = useScrollData();
   const [scrollState, setScrollState] = useState(0);
 

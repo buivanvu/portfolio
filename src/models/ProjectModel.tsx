@@ -5,10 +5,15 @@ import { useRef, useContext, useEffect, useState } from 'react'
 import { useScrollData } from '../UseScrollData';
 import { ScrollContext } from '../ScrollManager';
 
+
+
 export default function ProjectModel(props) {
   const group = useRef(null);
   const screenGroupRef = useRef(null);
-  const { nodes, materials } = useGLTF('/mac-draco.glb');
+
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore: @react-three/drei didn't fully support typescript yet
+  const { nodes, materials } = (useGLTF('/mac-draco.glb'));
   const { gl } = useThree();
   const [page, setPage] = useState<number>(0)
 
