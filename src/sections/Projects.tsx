@@ -11,15 +11,12 @@ import AnimatedText from '../components/AnimatedText.js';
 export default function Projects() {
   return (
     <div className='relative'>
-      <div className='flex flex-col lg:flex-row flex-wrap justify-start lg:justify-between mx-auto max-w-[1280px] h-screen sticky top-0 pointer-events-none'>
+      <div className='flex flex-col lg:flex-row flex-wrap justify-between mx-auto max-w-[1280px] h-[50vh] md:h-screen sticky top-0 pointer-events-none'>
         <div className='w-full lg:w-1/2 pointer-events-none'>
-          <div className='hidden md:block text-2xl lg:text-4xl font-bold py-3 text-emerald-700 auto-bg pt-6'>Featured Projects</div>
+          <div className='text-center md:text-left text-xl lg:text-4xl font-bold py-3 text-emerald-700 auto-bg pt-6'>Featured Projects</div>
         </div>
-        <div className='w-full lg:w-1/2 flex flex-col lg:justify-center'>
-          <div id="canvas-project" className='relative aspect-square md:pt-0'>
-            <div className='absolute w-full md:hidden'>
-              <div className='text-center text-lg text-purple-500 bg-gray-900 py-2'>FEATURED PROJECTS</div>
-            </div>
+        <div className='w-full hidden md:flex lg:w-1/2 flex-col lg:justify-center'>
+          <div id="canvas-project" className='relative aspect-square'>
             <Canvas camera={{ position: [-4.5, 0.1, -16.6], fov: 47 }}>
               <ambientLight intensity={0.2} />
               <pointLight position={[10, 10, 10]} intensity={.8} />
@@ -46,13 +43,14 @@ export default function Projects() {
                 duration: .5,
               },
             }}>
-            <CSSMouseTracker className='text-2xl py-2 md:text-4xl font-bold text-gray bg-clip-text text-transparent leading-normal tracking-normal '>
+            <CSSMouseTracker className='text-2xl py-2 md:text-4xl font-bold text-gray bg-clip-text text-transparent leading-snug md:leading-normal tracking-normal '>
               a platform that <br />
               offers access to world-class <br />
               private market investments <br />
               powered by blockchain.
             </CSSMouseTracker>
             <div className='text-xl text-muted mt-3'><span className='tracking-tighter'>Role as:</span> <strong>Fullstack Developer</strong></div>
+            <img className='mt-5 animate-fade rounded md:hidden' src='/addx.png' />
           </motion.div>
         </div>
         <div className='h-screen lg:w-1/2'>
@@ -64,13 +62,14 @@ export default function Projects() {
                 duration: .5,
               },
             }}>
-            <CSSMouseTracker className='text-2xl py-2 md:text-4xl font-bold text-gray bg-clip-text text-transparent leading-normal tracking-normal '>
+            <CSSMouseTracker className='text-2xl py-2 md:text-4xl font-bold text-gray bg-clip-text text-transparent leading-snug md:leading-normal tracking-normal '>
               ecommerce platform<br/>
               which sell & export used<br/>
               cars from Japan to<br />
               other countries.
             </CSSMouseTracker>
             <div className='text-xl text-muted mt-3'><span className='tracking-tighter'>Role as:</span> <strong>Fullstack Developer</strong></div>
+            <img className='mt-5 animate-fade rounded md:hidden' src='/cfj.png' />
           </motion.div>
         </div>
         <div className='h-screen lg:w-1/2'>
@@ -82,13 +81,14 @@ export default function Projects() {
                 duration: .5,
               },
             }}>
-            <CSSMouseTracker className='text-2xl md:text-4xl py-2 font-bold text-gray bg-clip-text text-transparent leading-normal tracking-tight'>
+            <CSSMouseTracker className='text-2xl md:text-4xl py-2 font-bold text-gray bg-clip-text text-transparent leading-snug md:leading-normal tracking-tight'>
               <div>e-learning platform -</div>
               <div>my very first journey to the</div>
               web developments world<br />
               since I were a student at HNUE
             </CSSMouseTracker>
             <div className='text-lg text-muted mt-3'><span className='tracking-tighter'>Role as:</span> <strong>Co-Founder, System Design & Engineer</strong></div>
+            <img className='mt-5 animate-fade rounded md:hidden' src='/olm.png' />
           </motion.div>
         </div>
       </div>
