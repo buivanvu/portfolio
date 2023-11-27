@@ -125,8 +125,14 @@ body, .auto-bg{
 
 .bg-top-section{
   background-image:
-    
     radial-gradient(25% 30% at 80% 60%, #c2f765a7 0%, transparent 90%),
     radial-gradient(27% 28% at 73% 28%, #c5ecf8f5 10%, transparent 100%);
+}
 
+@media (max-width: 480px) {
+  .bg-top-section{
+    background-image:
+      radial-gradient(32% 23% at 30% 15%, #c2f765a7 0%, transparent 90%),
+      radial-gradient(33% 24% at 70% 25%, #c5ecf8f5 10%, transparent 100%);
+  }
 }
