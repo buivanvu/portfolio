@@ -27,8 +27,8 @@ export default function About() {
             </a>
           </div>
       </div>
-      <div className="wf-full sm:w-full xl:w-1/3 w-full flex flex-col justify-center items-center">
-        <div className="relative p-5 w-1/2 md:w-full">
+      <div className="wf-full sm:w-full xl:w-1/3 w-full h-[35vh] md:h-full flex flex-col justify-center items-center">
+        <div className="relative p-0 md:p-5 w-1/2 md:w-full">
           <img className="rounded-full" src='/avt.jpg' />
         </div>
       </div>

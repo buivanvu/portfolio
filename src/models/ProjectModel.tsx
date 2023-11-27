@@ -40,13 +40,11 @@ export default function ProjectModel(props) {
           <mesh material={materials.aluminium} geometry={nodes['Cube008'].geometry} />
           <mesh material={materials['matte.001']} geometry={nodes['Cube008_1'].geometry} />
           <mesh geometry={nodes['Cube008_2'].geometry}>
-            <Html portal={{ current: gl.domElement.parentNode as HTMLElement }} className="content" rotation-x={-Math.PI / 2} position={[0, 0.05, -0.09]} transform occlude>
+            <Html portal={{ current: gl.domElement.parentNode as HTMLElement }} className="content" rotation-x={-Math.PI / 2} position={[0, 0.05, 0.01]} transform occlude>
                 <div className="wrapper" onPointerDown={(e) => e.stopPropagation()}>
-                  <div>
                     { page === 0 && <img className='animate-fade' src='/addx.png'/> }
                     { page === 1 && <img className='animate-fade' src='/cfj.png'/> }
                     { page === 2 && <img className='animate-fade' src='/olm.png'/> }
-                  </div>
                 </div>
               </Html>
           </mesh>

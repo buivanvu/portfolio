@@ -35,6 +35,8 @@ export default function Skills() {
     </div>
     </CSSMouseTracker>
     </div>
+    <div className='md:hidden h-[25vh]'>
+    </div>
   </div>
   );
 }
