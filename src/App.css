@@ -66,9 +66,9 @@ body, .auto-bg{
 .mouse-tracker{
   --x-offset: -1000px;
   --y-offset: -1000px;
-  --gradient-stop: 60deg, #000 0%, #000 100%;
+  --gradient-stop: 60deg, #444 0%, #444 100%;
   display: block;
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.25);
   background-image: 
   radial-gradient(330px 330px at var(--x-offset) var(--y-offset), rgba(255, 255, 255, 0.7) 0%, transparent 33%, transparent),
   linear-gradient(var(--gradient-stop));
@@ -76,18 +76,28 @@ body, .auto-bg{
 }
 
 .txt-name{
-  --gradient-stop: 60deg, #0086ff, #e707ff;
+  --gradient-stop: 50deg,  #0086ff, #ee20ff;
 }
 
-.text-gray{
+.text-gray, .text-muted{
   --gradient-stop: 60deg, #777, #777;
-  color: #999;
+  color: #8F9094;
 }
 
 
 .addx{
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.175);
   --gradient-stop: 60deg, #0075db 0%, #c800de 100%;
+}
+
+.cfj{
+  color: rgba(255, 255, 255, 0.175);
+  --gradient-stop: 90deg, #009E77, #0099C0, #027FFF;
+}
+
+.olm{
+  color: rgba(255, 255, 255, 0.175);
+  --gradient-stop: 60deg, #f37335, #fdc830;
 }
 
 .skill-label{
@@ -102,6 +112,10 @@ body, .auto-bg{
   top: calc(var(--y-offset) + 16px);
   left: calc(var(--x-offset) + 16px);
   pointer-events: none;
+}
+
+.no-bg{
+  background-image: none !important;
 }
 
 #canvas-project{

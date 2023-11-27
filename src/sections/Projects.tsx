@@ -13,7 +13,7 @@ export default function Projects() {
     <div className='relative'>
       <div className='flex flex-col lg:flex-row flex-wrap justify-start lg:justify-between mx-auto max-w-[1280px] h-screen sticky top-0 pointer-events-none'>
         <div className='w-full lg:w-1/2 pointer-events-none'>
-          <div className='lg:visible text-2xl lg:text-5xl font-bold py-3 text-gray-600 auto-bg'>Featured projects</div>
+          <div className='lg:visible text-2xl lg:text-5xl font-bold py-3 text-purple-700 auto-bg pt-6'>Featured projects</div>
         </div>
         <div className='w-full lg:w-1/2 flex flex-col lg:justify-center'>
           <div id="canvas-project" className='relative aspect-square'>
@@ -34,7 +34,7 @@ export default function Projects() {
       </div>
       <div className='flex flex-col justify-between mx-auto max-w-[1280px] p-5 md:p-0'>
         <div className='h-screen lg:w-1/2'>
-          <AnimatedText delay={0.5} className='font-bold tracking-tighter text-7xl md:text-8xl my-6 w-fit addx'>ADDX</AnimatedText>
+          <AnimatedText delay={0.5} className='font-bold tracking-tighter text-7xl pr-1 my-6 w-fit addx'>ADDX</AnimatedText>
           <motion.div initial={{ y: 120, opacity: .1 }} 
             whileInView={{
               y: 0,
@@ -43,17 +43,17 @@ export default function Projects() {
                 duration: .5,
               },
             }}>
-            <CSSMouseTracker className='text-2xl md:text-4xl font-bold text-gray bg-clip-text text-transparent'>
+            <CSSMouseTracker className='text-2xl py-2 md:text-4xl font-bold text-gray bg-clip-text text-transparent leading-tight tracking-normal '>
               a platform that <br />
               offers access to world-class <br />
               private market investments <br />
               powered by blockchain.
             </CSSMouseTracker>
-            <div className='text-xl text-gray-600 mt-3'><span className='tracking-tighter'>Role as:</span> <strong>Fullstack Developer</strong></div>
+            <div className='text-xl text-muted mt-3'><span className='tracking-tighter'>Role as:</span> <strong>Fullstack Developer</strong></div>
           </motion.div>
         </div>
         <div className='h-screen lg:w-1/2'>
-          <AnimatedText delay={0.5} className='font-bold tracking-tighter text-5xl md:text-6xl my-6 w-fit addx'>Car from Japan</AnimatedText>
+          <AnimatedText delay={0.5} className='font-bold pb-1 tracking-tighter text-5xl md:text-6xl my-5 w-fit cfj'>Car from Japan</AnimatedText>
           <motion.div initial={{ y: 120 }} 
             whileInView={{
               y: 0,
@@ -61,17 +61,17 @@ export default function Projects() {
                 duration: .5,
               },
             }}>
-            <CSSMouseTracker className='text-3xl md:text-4xl font-bold text-gray bg-clip-text text-transparent'>
-              a platform that <br />
-              offers access to world-class <br />
-              private market investments <br />
-              powered by blockchain.
+            <CSSMouseTracker className='text-3xl py-2 md:text-4xl font-bold text-gray bg-clip-text text-transparent leading-tight tracking-normal '>
+              ecommerce platform<br/>
+              which sell & export used<br/>
+              cars from Japan to<br />
+              other countries.
             </CSSMouseTracker>
-            <div className='text-xl text-gray-600 mt-3'><span className='tracking-tighter'>Role as:</span> <strong>Fullstack Developer</strong></div>
+            <div className='text-xl text-muted mt-3'><span className='tracking-tighter'>Role as:</span> <strong>Fullstack Developer</strong></div>
           </motion.div>
         </div>
         <div className='h-screen lg:w-1/2'>
-        <AnimatedText delay={0.5} className='font-bold tracking-tighter text-6xl my-6 w-fit addx'>Online Math</AnimatedText>
+        <AnimatedText delay={0.5} className='font-bold tracking-tighter text-6xl my-6 w-fit olm'>Online Math</AnimatedText>
           <motion.div initial={{ y: 120 }} 
             whileInView={{
               y: 0,
@@ -79,13 +79,13 @@ export default function Projects() {
                 duration: .5,
               },
             }}>
-            <CSSMouseTracker className='text-4xl font-bold text-gray bg-clip-text text-transparent'>
-              <div>a platform that</div>
-              <div>offers access to world-class</div>
-              private market investments <br />
-              powered by blockchain.
+            <CSSMouseTracker className='text-4xl py-2 font-bold text-gray bg-clip-text text-transparent leading-tight tracking-normal'>
+              <div>e-learning platform</div>
+              <div>it's my very first journey to</div>
+              the web developments world.<br />
+              since I were a student at HNUE
             </CSSMouseTracker>
-            <div className='text-xl text-gray-600 mt-3'><span className='tracking-tighter'>Role as:</span> <strong>Co-Founder, System Design & Engineer</strong></div>
+            <div className='text-lg text-muted mt-3'><span className='tracking-tighter'>Role as:</span> <strong>Co-Founder, System Design & Engineer</strong></div>
           </motion.div>
         </div>
       </div>
