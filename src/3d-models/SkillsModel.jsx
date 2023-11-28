@@ -55,7 +55,7 @@ export default function SkillsModel(props) {
     if (scrollData.offset > 0.92 ) {
       model.current.rotation.y += 0.00075;
     } else {
-      model.current.rotation.y = -0.35;
+      model.current.rotation.y = window.innerWidth < 480 ? -0.35 : -0.99;
     }
   });
 

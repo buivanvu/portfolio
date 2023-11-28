@@ -22,7 +22,7 @@ export default function Skills() {
     <div className='w-full'>
     <CSSMouseTracker className='relative no-bg mt-12'>
     { skill && <div className='skill-label font-bold py-2 px-4 shadow-sm text-gray-700'>{skill}</div> }
-    <div id="canvas-skill" className='relative aspect-[4/5] md:aspect-[3/2] '>
+    <div id="canvas-skill" className='relative aspect-[5/6] md:aspect-[3/2] '>
       <Canvas dpr={[1, 2]} color='#fff' camera={{ position: [5, 10, 16], fov: 45 }}>
         <OrbitControls enablePan={false} enableZoom={false} />
         <ambientLight intensity={0.4} />
