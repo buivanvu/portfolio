@@ -56,7 +56,7 @@ export default function Projects() {
               powered by blockchain.
             </CSSMouseTracker>
             <div className='text-xl text-muted mt-3'><span className='tracking-tighter'>Role as:</span> <strong>Fullstack Developer</strong></div>
-            <img className='mt-5 animate-fade rounded md:hidden' src='/addx.png' />
+            <img className='mt-5 animate-fade rounded-md md:hidden' src='/addx_rs.png' />
           </motion.div>
         </div>
         <div className='h-screen lg:w-1/2'>
@@ -71,7 +71,7 @@ export default function Projects() {
               other countries.
             </CSSMouseTracker>
             <div className='text-xl text-muted mt-3'><span className='tracking-tighter'>Role as:</span> <strong>Fullstack Developer</strong></div>
-            <img className='mt-5 animate-fade rounded md:hidden' src='/cfj.png' />
+            <img className='mt-5 animate-fade rounded-md md:hidden' src='/cfj_sm.png' />
           </motion.div>
         </div>
         <div className='h-screen lg:w-1/2'>
@@ -86,7 +86,7 @@ export default function Projects() {
               since I were a student at <a href='https://hnue.edu.vn'>HNUE</a>
             </CSSMouseTracker>
             <div className='text-lg text-muted mt-3'><span className='tracking-tighter'>Role as:</span> <strong>Co-Founder, System Design & Engineer</strong></div>
-            <img className='mt-5 animate-fade rounded md:hidden' src='/olm.png' />
+            <img className='mt-5 animate-fade rounded-md md:hidden' src='/olm_rs.png' />
           </motion.div>
         </div>
       </div>
