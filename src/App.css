@@ -17,26 +17,6 @@ body, .auto-bg{
   100% { opacity: 1; }
 }
 
-@keyframes morph {
-  0% {
-      border-radius: 40% 60% 60% 40%/70% 30%
-  }
-
-  to {
-      border-radius: 40% 60%
-  }
-}
-
-@keyframes spin {
-  to {
-      transform: rotate(1turn)
-  }
-}
-
-.animated-morph{
-  animation: morph 5s linear infinite alternate, spin 20s linear infinite;
-}
-
 .animate-fade{
   animation: fadeIn 1s ease-in;
 }
@@ -44,7 +24,6 @@ body, .auto-bg{
 .content {
   width: 334px;
   height: 216px;
-  /* background: #f0f0f0; */
   border-radius: 3px;
   padding: 0;
   overflow: hidden;
@@ -67,11 +46,11 @@ body, .auto-bg{
 .mouse-tracker{
   --x-offset: -1000px;
   --y-offset: -1000px;
-  --gradient-stop: 60deg, #444 0%, #444 100%;
+  --gradient-stop: 0deg, #505050 0%, #505050 100%;
   display: block;
   color: rgba(0, 0, 0, 0.25);
   background-image: 
-  radial-gradient(330px 330px at var(--x-offset) var(--y-offset), rgba(255, 255, 255, 0.7) 0%, transparent 33%, transparent),
+  radial-gradient(250px 250px at var(--x-offset) var(--y-offset), rgba(255, 255, 255, 0.7) 0%, transparent 33%, transparent),
   linear-gradient(var(--gradient-stop));
   background-repeat: no-repeat;
 }
@@ -81,8 +60,8 @@ body, .auto-bg{
 }
 
 .text-gray, .text-muted{
-  --gradient-stop: 60deg, #777, #777;
-  color: #8F9094;
+  --gradient-stop: 90deg, #707070, #707070;
+  color: #707070;
 }
 
 
@@ -127,6 +106,10 @@ body, .auto-bg{
   background-image:
     radial-gradient(25% 30% at 80% 60%, #c2f765a7 0%, transparent 90%),
     radial-gradient(27% 28% at 73% 28%, #c5ecf8f5 10%, transparent 100%);
+}
+
+.text-balance{
+  text-wrap: balance;
 }
 
 @media (max-width: 480px) {

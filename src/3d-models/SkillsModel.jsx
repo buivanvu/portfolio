@@ -55,7 +55,7 @@ export default function SkillsModel(props) {
     if (scrollData.offset > 0.92 ) {
       model.current.rotation.y += 0.00075;
     } else {
-      model.current.rotation.y =  - scrollData.offset;
+      model.current.rotation.y = -0.35;
     }
   });
 
@@ -77,7 +77,7 @@ export default function SkillsModel(props) {
         geometry={nodes.Cube001.geometry}
         material={materials["Material.002"]}
         position={[0, 0.734, -0.191]}
-        skillName="Material.002"
+        skillName="Typescript"
         setSkillHover={setSkillHover}
       />
       <ObjSelection

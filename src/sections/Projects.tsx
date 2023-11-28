@@ -4,16 +4,27 @@ import { Canvas } from '@react-three/fiber';
 import { Environment } from '@react-three/drei';
 import { motion } from "framer-motion";
 
-import ProjectModel from '../models/ProjectModel.jsx';
+import ProjectModel from '../3d-models/ProjectModel.js';
 import CSSMouseTracker from '../components/CSSMouseTracker.js';
 import AnimatedText from '../components/AnimatedText.js';
+
+const motionConfig = {
+  initial: { y: 120, opacity: .1 },
+  whileInView: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: .5,
+    },
+  }
+};
 
 export default function Projects() {
   return (
     <div className='relative'>
       <div className='flex flex-col lg:flex-row flex-wrap justify-between mx-auto max-w-[1280px] h-[50vh] md:h-screen sticky top-0 pointer-events-none'>
         <div className='w-full lg:w-1/2 pointer-events-none'>
-          <div className='text-center md:text-left text-xl lg:text-4xl font-bold py-3 text-emerald-700 auto-bg pt-6'>Featured Projects</div>
+          <div className='text-center md:text-left text-xl lg:text-4xl font-bold py-3 text-sky-600 auto-bg lg:pt-6'>Featured projects</div>
         </div>
         <div className='w-full hidden md:flex lg:w-1/2 flex-col lg:justify-center'>
           <div id="canvas-project" className='relative aspect-square'>
@@ -34,16 +45,11 @@ export default function Projects() {
       </div>
       <div className='flex flex-col justify-between mx-auto max-w-[1280px] p-5 md:p-0'>
         <div className='h-screen lg:w-1/2'>
-          <AnimatedText delay={0.5} className='font-bold tracking-tighter text-7xl pr-1 my-6 w-fit addx'>ADDX</AnimatedText>
-          <motion.div initial={{ y: 120, opacity: .1 }} 
-            whileInView={{
-              y: 0,
-              opacity: 1,
-              transition: {
-                duration: .5,
-              },
-            }}>
-            <CSSMouseTracker className='text-2xl py-2 md:text-4xl font-bold text-gray bg-clip-text text-transparent leading-snug md:leading-normal tracking-normal '>
+          <a href='https://addx.co'>
+            <AnimatedText delay={0.5} className='font-bold tracking-tighter text-7xl pr-1 my-6 w-fit addx'>ADDX</AnimatedText>
+          </a>
+          <motion.div {...motionConfig} >
+            <CSSMouseTracker className='text-2xl py-2 md:text-4xl font-bold text-gray bg-clip-text text-transparent leading-snug md:leading-tight tracking-normal '>
               a platform that <br />
               offers access to world-class <br />
               private market investments <br />
@@ -54,17 +60,13 @@ export default function Projects() {
           </motion.div>
         </div>
         <div className='h-screen lg:w-1/2'>
-          <AnimatedText delay={0.5} className='font-bold pb-1 tracking-tighter text-5xl md:text-6xl my-5 w-fit cfj'>Car from Japan</AnimatedText>
-          <motion.div initial={{ y: 120 }} 
-            whileInView={{
-              y: 0,
-              transition: {
-                duration: .5,
-              },
-            }}>
-            <CSSMouseTracker className='text-2xl py-2 md:text-4xl font-bold text-gray bg-clip-text text-transparent leading-snug md:leading-normal tracking-normal '>
-              ecommerce platform<br/>
-              which sell & export used<br/>
+          <a href='https://carfromjapan.com'>
+            <AnimatedText delay={0.5} className='font-bold pb-1 tracking-tighter text-5xl md:text-6xl my-5 w-fit cfj'>Car from Japan</AnimatedText>
+          </a>
+          <motion.div {...motionConfig} >
+            <CSSMouseTracker className='text-2xl py-2 md:text-4xl font-bold text-gray bg-clip-text text-transparent leading-snug md:leading-tight tracking-normal '>
+              ecommerce platform<br />
+              which sell & export used<br />
               cars from Japan to<br />
               other countries.
             </CSSMouseTracker>
@@ -73,19 +75,15 @@ export default function Projects() {
           </motion.div>
         </div>
         <div className='h-screen lg:w-1/2'>
-        <AnimatedText delay={0.5} className='font-bold tracking-tighter text-6xl my-6 w-fit olm'>Online Math</AnimatedText>
-          <motion.div initial={{ y: 120 }} 
-            whileInView={{
-              y: 0,
-              transition: {
-                duration: .5,
-              },
-            }}>
-            <CSSMouseTracker className='text-2xl md:text-4xl py-2 font-bold text-gray bg-clip-text text-transparent leading-snug md:leading-normal tracking-tight'>
-              <div>e-learning platform -</div>
+          <a href='https://olm.vn'>
+            <AnimatedText delay={0.5} className='font-bold tracking-tighter text-6xl my-6 w-fit olm'>Online Math</AnimatedText>
+          </a>
+          <motion.div {...motionConfig} >
+            <CSSMouseTracker className='text-2xl md:text-4xl py-2 font-bold text-gray bg-clip-text text-transparent leading-snug md:leading-tight tracking-tight'>
+              <div>E-learning platform</div>
               <div>my very first journey to the</div>
-              web developments world<br />
-              since I were a student at HNUE
+              web developments world,<br />
+              since I were a student at <a href='https://hnue.edu.vn'>HNUE</a>
             </CSSMouseTracker>
             <div className='text-lg text-muted mt-3'><span className='tracking-tighter'>Role as:</span> <strong>Co-Founder, System Design & Engineer</strong></div>
             <img className='mt-5 animate-fade rounded md:hidden' src='/olm.png' />
