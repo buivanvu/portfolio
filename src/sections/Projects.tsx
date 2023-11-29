@@ -49,10 +49,10 @@ export default function Projects() {
             <AnimatedText delay={0.5} className='font-bold tracking-tighter text-7xl pr-1 my-6 w-fit addx'>ADDX</AnimatedText>
           </a>
           <motion.div {...motionConfig} >
-            <CSSMouseTracker className='text-2xl py-2 md:text-4xl font-bold text-gray bg-clip-text text-transparent leading-snug md:leading-tight tracking-normal '>
-              a platform that <br />
-              offers access to world-class <br />
-              private market investments <br />
+            <CSSMouseTracker className='text-2xl md:py-2 md:text-4xl font-bold text-gray bg-clip-text text-transparent leading-snug md:leading-tight tracking-normal '>
+              a platform that <br/>
+              offers access to world-class <br/>
+              private market investments <br/>
               powered by blockchain.
             </CSSMouseTracker>
             <div className='text-xl text-muted mt-3'><span className='tracking-tighter'>Role as:</span> <strong>Fullstack Developer</strong></div>
@@ -64,10 +64,10 @@ export default function Projects() {
             <AnimatedText delay={0.5} className='font-bold pb-1 tracking-tighter text-5xl md:text-6xl my-5 w-fit cfj'>Car from Japan</AnimatedText>
           </a>
           <motion.div {...motionConfig} >
-            <CSSMouseTracker className='text-2xl py-2 md:text-4xl font-bold text-gray bg-clip-text text-transparent leading-snug md:leading-tight tracking-normal '>
-              ecommerce platform<br />
-              which sell & export used<br />
-              cars from Japan to<br />
+            <CSSMouseTracker className='text-2xl md:py-2 md:text-4xl font-bold text-gray bg-clip-text text-transparent leading-snug md:leading-tight tracking-normal '>
+              ecommerce platform<br/>
+              which sell & export used<br/>
+              cars from Japan to<br/>
               other countries.
             </CSSMouseTracker>
             <div className='text-xl text-muted mt-3'><span className='tracking-tighter'>Role as:</span> <strong>Fullstack Developer</strong></div>
@@ -79,7 +79,7 @@ export default function Projects() {
             <AnimatedText delay={0.5} className='font-bold tracking-tighter text-6xl my-6 w-fit olm'>Online Math</AnimatedText>
           </a>
           <motion.div {...motionConfig} >
-            <CSSMouseTracker className='text-2xl md:text-4xl py-2 font-bold text-gray bg-clip-text text-transparent leading-snug md:leading-tight tracking-tight'>
+            <CSSMouseTracker className='text-2xl md:text-4xl md:py-2 font-bold text-gray bg-clip-text text-transparent leading-snug md:leading-tight tracking-tight'>
               <div>E-learning platform</div>
               <div>my very first journey to the</div>
               web developments world,<br />
