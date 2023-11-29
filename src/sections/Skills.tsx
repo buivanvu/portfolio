@@ -24,7 +24,7 @@ export default function Skills() {
     { skill && <div className='skill-label font-bold py-2 px-4 shadow-sm text-gray-700'>{skill}</div> }
     <div id="canvas-skill" className='relative aspect-[5/6] md:aspect-[3/2] '>
       <Canvas dpr={[1, 2]} color='#fff' camera={{ position: [5, 10, 16], fov: 45 }}>
-        <OrbitControls enablePan={false} enableZoom={false} />
+        <OrbitControls enablePan={false} enableZoom={false}  maxPolarAngle={1.2} minPolarAngle={0.5} />
         <ambientLight intensity={0.4} />
         <pointLight position={[-10, -10, -10]} intensity={0.2}/>
         <directionalLight intensity={0.3} position={[0, 20, 6]} />
