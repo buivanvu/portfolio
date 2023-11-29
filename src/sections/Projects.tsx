@@ -10,6 +10,7 @@ import AnimatedText from '../components/AnimatedText.js';
 
 const motionConfig = {
   initial: { y: 120, opacity: .1 },
+  viewport: { once: true },
   whileInView: {
     y: 0,
     opacity: 1,

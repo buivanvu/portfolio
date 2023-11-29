@@ -12,9 +12,8 @@ export const ScrollManager = (props: { children: React.ReactNode}) => {
     scrollData.offset = scrollData.scrollTop / scrollData.scrollSize;
     
     // Adjust screen color based on scroll position
-    const brightness = 255 * (1 - Math.min(scrollData.offset * 5, 1));
-    if (scrollData.offset > 0.03) {
-      document.body.style.setProperty('--background', `rgb(${brightness}, ${brightness}, ${brightness})`);
+    if (scrollData.offset > 0.11) {
+      document.body.style.setProperty('--background', `rgb(0, 0, 0)`);
     } else {
       document.body.style.setProperty('--background', `rgb(255,255,255)`);
     }
