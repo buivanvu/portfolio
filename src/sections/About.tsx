@@ -4,14 +4,14 @@ export default function About() {
   return (
     <div className="h-[90vh] lg:h-[90vh] flex flex-col-reverse md:flex-row justify-end md:justify-center">
       <div className="p-5 lg:p-0 flex xl:w-2/3 w-full flex-col justify-center">
-          <AnimatedText playOnce duration={.4} className="font-bold text-2xl md:text-3xl tracking-tighter text-secondary w-fit">Hi there, I'm</AnimatedText>
-          <AnimatedText playOnce delay={0.4} duration={1}
+          <AnimatedText playOnce duration={.8} className="font-bold text-2xl md:text-3xl tracking-tighter text-secondary w-fit">Hi there, I'm</AnimatedText>
+          <AnimatedText playOnce delay={0.4} duration={1.2}
             className="mouse-tracker text-6xl md:text-8xl lg:text-8xl txt-name font-bold tracking-tighter bg-clip-text w-fit !leading-relaxed "
           >
             Bùi Văn Vũ
           </AnimatedText>
-          <AnimatedText playOnce delay={1} className="text-2xl md:text-3xl font-bold tracking-tight text-secondary w-fit">Fullstack web developer</AnimatedText>
-          <AnimatedText playOnce delay={1.5} className="text-2xl md:text-3xl font-bold tracking-tight text-secondary w-fit">Based in Viet Nam</AnimatedText>
+          <AnimatedText playOnce delay={1.2} className="text-2xl md:text-3xl font-bold tracking-tight text-secondary w-fit">Fullstack web developer</AnimatedText>
+          <AnimatedText playOnce delay={1.6} className="text-2xl md:text-3xl font-bold tracking-tight text-secondary w-fit">Based in Viet Nam</AnimatedText>
           <div className="mt-8 flex flex-row justify-center md:justify-start tracking-tight font-bold">
             <a href="mailto:buivu_a11@live.com" title='buivu_a11@live.com' className="btn mr-3 py-1 px-3 flex flex-row items-center gap-1.5 bg-lime-100 hover:bg-lime-200 text-lime-700 rounded-md">
               <svg stroke="currentColor" fill="currentColor" color="#3f6212" stroke-width="0" viewBox="0 0 512 512" aria-hidden="true" focusable="false" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg>
@@ -29,7 +29,7 @@ export default function About() {
       </div>
       <div className="wf-full sm:w-full md:w-1/3 lg:w-1/3 h-[40vh] md:h-full flex flex-col justify-center items-center">
         <div className="relative p-0 md:p-5 w-1/2 md:w-full">
-          <img style={{ padding: '10px', background: '#fff' }} className="rounded-full" src='/avt.jpg' />
+          <img width={800} height={800} style={{ padding: '10px', background: '#fff' }} className="rounded-full" src='/avt.jpg' />
         </div>
       </div>
     </div>
