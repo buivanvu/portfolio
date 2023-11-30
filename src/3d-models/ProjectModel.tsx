@@ -47,9 +47,9 @@ export default function ProjectModel(props) {
           <mesh geometry={nodes['Cube008_2'].geometry}>
             <Html portal={{ current: gl.domElement.parentNode as HTMLElement }} className="content" rotation-x={-Math.PI / 2} position={[0, 0.05, 0.01]} transform occlude>
                 <div className="wrapper" onPointerDown={(e) => e.stopPropagation()}>
-                    { page === 0 && <img width={1000} height={635} className='animate-fade p-1 mb-1' src='/addx_rs.png'/> }
-                    { page === 1 && <img className='animate-fade p-1 mb-1' src='/cfj_sm.png'/> }
-                    { page === 2 && <img className='animate-fade p-1 mb-1' src='/olm_rs.png'/> }
+                    { page === 0 && <img width={1000} height={635} className='animate-fade p-1 pt-2' src='/addx_rs.png'/> }
+                    { page === 1 && <img width={1000} height={640} className='animate-fade p-1 pt-2' src='/cfj_sm.png'/> }
+                    { page === 2 && <img width={1000} height={640} className='animate-fade p-1 pt-2' src='/olm_rs.png'/> }
                 </div>
               </Html>
           </mesh>

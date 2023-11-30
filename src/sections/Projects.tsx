@@ -56,7 +56,7 @@ export default function Projects() {
               private market investments <br/>
               powered by blockchain.
             </CSSMouseTracker>
-            <div className='text-xl text-muted mt-3'><span className='tracking-tighter'>Role as:</span> <strong>Fullstack Developer</strong></div>
+            <div className='text-lg md:text-xl text-muted mt-3'><span className='tracking-tighter'>Role as:</span> <strong>Fullstack Developer</strong></div>
             <img className='mt-5 animate-fade rounded-md md:hidden' src='/addx_rs.png' />
           </motion.div>
         </div>
@@ -71,13 +71,13 @@ export default function Projects() {
               cars from Japan to<br/>
               other countries.
             </CSSMouseTracker>
-            <div className='text-xl text-muted mt-3'><span className='tracking-tighter'>Role as:</span> <strong>Fullstack Developer</strong></div>
+            <div className='text-lg md:text-xl text-muted mt-3'><span className='tracking-tighter'>Role as:</span> <strong>Fullstack Developer</strong></div>
             <img className='mt-5 animate-fade rounded-md md:hidden' src='/cfj_sm.png' />
           </motion.div>
         </div>
         <div className='h-screen lg:w-1/2'>
           <a href='https://olm.vn'>
-            <AnimatedText delay={0.5} className='font-bold tracking-tighter text-6xl my-6 w-fit olm'>Online Math</AnimatedText>
+            <AnimatedText delay={0.5} className='font-bold tracking-tighter text-5xl md:text-6xl my-6 w-fit olm'>Online Math</AnimatedText>
           </a>
           <motion.div {...motionConfig} >
             <CSSMouseTracker className='text-2xl md:text-4xl md:py-2 font-bold text-gray bg-clip-text text-transparent leading-snug md:leading-tight tracking-tight'>
@@ -86,7 +86,7 @@ export default function Projects() {
               web developments world,<br />
               since I were a student at <a href='https://hnue.edu.vn'>HNUE</a>
             </CSSMouseTracker>
-            <div className='text-lg text-muted mt-3'><span className='tracking-tighter'>Role as:</span> <strong>Co-Founder, System Design & Engineer</strong></div>
+            <div className='text-md md:text-xl text-muted mt-3'><span className='tracking-tighter'>Role as:</span> <strong>Co-Founder, System Design & Engineer</strong></div>
             <img className='mt-5 animate-fade rounded-md md:hidden' src='/olm_rs.png' />
           </motion.div>
         </div>

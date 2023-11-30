@@ -80,7 +80,7 @@ body, .auto-bg{
 }
 
 .skill-label{
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.5);
   border: solid 1px #f3f3f3;
   border-radius: 8px;
   backdrop-filter: blur(10px);
@@ -92,6 +92,7 @@ body, .auto-bg{
   left: calc(var(--x-offset) + 16px);
   pointer-events: none;
 }
+
 
 .no-bg{
   background-image: none !important;
@@ -112,5 +113,10 @@ body, .auto-bg{
     background-image:
       radial-gradient(32% 20% at 30% 15%, #c2f765a7 0%, transparent 90%),
       radial-gradient(33% 20% at 70% 25%, #c5ecf8f5 10%, transparent 100%);
+  }
+  .skill-label{
+    top: -10px !important;
+    left: 50% !important;
+    transform: translateX(-50%);
   }
 }
