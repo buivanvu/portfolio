@@ -30,6 +30,12 @@ body, .auto-bg{
   transform: translateY(0px);
 }
 
+@media (max-width: 1750px) {
+  .content {
+    transform: translateY(-8px);
+  }
+}
+
 .wrapper {
   width: 668px;
   height: 432px;
